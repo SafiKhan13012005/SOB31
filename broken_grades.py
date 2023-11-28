@@ -21,26 +21,26 @@
 
 exam_one = int(input("Input exam grade one: "))
 
-exam_two = input("Input exam grade two: "))
+exam_two = int(input("Input exam grade two: "))
 
-exam_3 = str(input("Input exam grade three: "))
+exam_three = int(input("Input exam grade three: ")) #exam_3 was renamed to exam_three and int was missing.
 
-grades = [exam_one exam_two exam_three]
+grades = [exam_one, exam_two, exam_three] #Commas were missing.
 sum = 0
-for grade in grade:
-  sum = sum + grade
+for grade in grades:
+  sum += grade
 
-avg = sum / len(grdes)
+avg = sum / len(grades) #Spelling error in 'grades.'
 
 if avg >= 90:
     letter_grade = "A"
-elif avg >= 80 and avg < 90
+elif avg >= 80 and avg < 90: #Colon was missing.
     letter_grade = "B"
 elif avg > 69 and avg < 80:
-    letter_grade = "C'
+    letter_grade = "C" #Single quotations changed to double quotation.
 elif avg <= 69 and avg >= 65:
     letter_grade = "D"
-elif:
+else: #Elif was changed to else.
     letter_grade = "F"
 
 for grade in grades:
@@ -50,7 +50,7 @@ for grade in grades:
 
     print("Grade: " + letter_grade)
 
-if letter-grade is "F":
-    print "Student is failing."
+if letter_grade is  "F": #There was a hyphen instead of an underscore.
+    print ("Student is failing.") #Brackets added.
 else:
-    print "Student is passing."
+    print ("Student is passing.") #Brackets added.
